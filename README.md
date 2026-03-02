@@ -1,4 +1,4 @@
-I cloneed Christophe Delord's project, just because there is no guarentee it'll be there next year.  And I used his project to process my files.  I want to make sure I can always use his preprocessor in the future. 
+I cloned Christophe Delord's project, just because there is no guarentee it'll be there next year.  I used his project to process my files.  I want to make sure I can always use his preprocessor in the future. 
 
 (gathering repositories that I need for Abe, under the prefix "Abe_")
 
