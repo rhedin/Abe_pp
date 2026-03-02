@@ -2,6 +2,8 @@ I cloned Christophe Delord's project, just because there is no guarentee it'll b
 
 (gathering repositories that I need for Abe, under the prefix "Abe_")
 
+I'm going to put a pp binary in the Releases area.  Built from Haskell.  That's just in case anyone has trouble building it in the future.  Dependency out of date or something.  It is built for a Macintosh. 
+
 # PP - Generic preprocessor (with pandoc in mind)
 
 [PP](http://cdelord.fr/pp "PP - Generic Preprocessor (for Pandoc)") is a
