@@ -4,6 +4,52 @@ I cloned Christophe Delord's project, just because there is no guarentee it'll b
 
 I'm going to put a pp binary in the Releases area.  Built from Haskell.  That's just in case anyone has trouble building it in the future.  Dependency out of date or something.  It is built for a Macintosh. 
 
+Okay, folks.  True confessions time.  I brought pp into my project, because it was advertised that it would maintain the indentation when a file was inserted.  For example 
+
+```
+<html>
+    <body>
+        !include(character_definitions.html)
+    </body>
+</html>
+```
+
+would become 
+
+```
+<html>
+    <body>
+        <svg>
+            <defs>
+                <g id="ascii26">
+                    <path d="M 7.056 9.456 ... Z"/>
+                </g>
+                ...
+            </defs>
+        </svg>
+    </body>
+</html>
+```
+
+and not 
+
+```
+<html>
+    <body>
+<svg>
+    <defs>
+        <g id="ascii26">
+            <path d="M 7.056 9.456 ... Z"/>
+        </g>
+        ...
+    </defs>
+</svg>
+    </body>
+</html>
+```
+
+It turns out, that is not true.  pp brings the lines in from the inserted file just as they are, without inserting the whitespace on the left before each line, the same as m4 and gpp.  As of now, pp is not used in my project. 
+
 # PP - Generic preprocessor (with pandoc in mind)
 
 [PP](http://cdelord.fr/pp "PP - Generic Preprocessor (for Pandoc)") is a
